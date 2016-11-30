@@ -20,6 +20,7 @@ public class SmokeTest {
 		driver.get("https://www.facebook.com");
 	}
 	
+	//Adding few comments
 	@When("^I enter valid \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void I_enter_valid_username_and_password(String uname, String paswd) throws Throwable{
 		driver.findElement(By.id("email")).sendKeys(uname);
